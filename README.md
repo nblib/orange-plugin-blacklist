@@ -31,7 +31,8 @@
     }
     ```
 3. 此时,可以通过命令`curl -d "enable=1" "http://host:9999/blacklist/enable"`开启插件的使用
-#### 添加可视化功能(可选)
+
+####  添加可视化功能(可选)
 1. 复制文件`dashboard/blacklist.html`到`<orange-path>/dashboard/views`下
 1. 复制文件`dashboard/blacklist.js`到`<orange-path>/dashboard/static/js`下
 1. 将文件`dashboard/left_nav.html`替换到`<orange-path>/dashboard/views/common`下的同名文件
