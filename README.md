@@ -27,9 +27,15 @@
         "port":	6379,
         "timeout": 2000,
         "pool_max_idle_time": 20000,
-        "pool_size": 50
+        "pool_size": 50,
+        "timerdelay": 300
     }
     ```
+    * server为redis主机ip(暂不能用域名)
+    * timeout 为连接redis的超时时间,单位: ms,默认: 1000
+    * pool_max_idle_time 为连接redis的连接池最大空闲连接存活时间,单位: ms,默认 10000
+    * pool_size 为连接池大小, 默认 100
+    * timerdelay 为多长时间从redis获取一次最新数据,单位: s,默认 300(5分钟)
 3. 此时,可以通过命令`curl -d "enable=1" "http://host:9999/blacklist/enable"`开启插件的使用
 
 ####  添加可视化功能(可选)
